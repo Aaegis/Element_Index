@@ -386,18 +386,18 @@ literallyEveryElementSymbol = [
 
 function query() {
     userInput = document.getElementById("textarea").value.toLowerCase();
-    console.log("User inputted \"" + userInput +"\"");
-    console.log("Parsing...")
+    console.info("User inputted \"" + userInput +"\"");
+    console.info("Parsing...")
     while (userInput != literallyEveryElement[searchValue]) {
         searchValue++;
         if (searchValue == 200) {
             alert("There were no elements that matched your search. Make sure you are using lowercase letters only.");
-            console.warn("No found element. Try searching using only lowercase letters.");
+            console.error("No found element. Try searching using only lowercase letters.");
             break;
         }
     }
-    console.log("Found element:", literallyEveryElement[searchValue]);
-    console.log("Found Molar Mass:", literallyEveryMolarMass[searchValue]);
+    console.info("Found element:", literallyEveryElement[searchValue]);
+    console.info("Found Molar Mass:", literallyEveryMolarMass[searchValue]);
 
 
     // set info on the info section
@@ -505,13 +505,10 @@ function query() {
     // this entire script is literally just spaghetti oh god why did i order the periodic table like this
     if (searchValue <= 56) {
         atomicNumber = searchValue + 1;
-        console.warn(atomicNumber);
     } else if (searchValue <= 74) {
         atomicNumber = searchValue + 15;
-        console.warn(atomicNumber);
     } else if (searchValue <= 89) {
         atomicNumber = searchValue + 29
-        console.warn(atomicNumber);
     } else if (searchValue <= 103){
         atomicNumber = searchValue - 32;
     } else if (searchValue != 200) {
@@ -524,7 +521,7 @@ function query() {
 
     // send charge to info panel
     document.getElementById("chargeInfo").textContent = charge;
-    console.log("Found charge:", charge);
+    console.info("Found charge:", charge);
 
     // allow the user to query again without having to refresh or do anything stupid
     searchValue = 0;
