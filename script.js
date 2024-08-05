@@ -405,7 +405,7 @@ function query() {
     document.getElementById("molarMassInfo").textContent = literallyEveryMolarMass[searchValue]; // Sets the molar mass on the info page
     document.getElementById("elementSymbol").textContent = literallyEveryElementSymbol[searchValue];
 
-    // ik this code looks bulky but at least i didnt use if statements to find the charge of an element one by one(coping)
+    // ik this code looks bulky but at least i didnt use if statements to find the charge of an element one by one (coping)
     switch(searchValue) {
 
         // CHARGE IS 1
@@ -537,3 +537,5 @@ function query() {
 document.getElementById("inputButton").onclick = function() {
     query();
 }
+
+// i hate my code
