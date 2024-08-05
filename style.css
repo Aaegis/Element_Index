@@ -1,0 +1,17 @@
+body {
+    background-color: gray;
+}
+
+button {
+    background-color: rgb(0, 255, 13);
+    border-radius: 20px;
+    border-color: white;
+    color:white;
+}
+
+textarea {
+    background-color: rgb(125, 255, 196);
+    border-radius: 20px;
+    border-color: white;
+    text-decoration-color: white;
+}

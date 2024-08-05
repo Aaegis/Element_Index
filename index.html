@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Element Index</title>
+        <link ref="icon" type="image/x-icon" href="favicon.ico?v=2">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <!--Head-->
+        <div class="container-fluid p-2 text-white bg-dark" style="text-align:center;">
+            <h1 style="display: inline;">Element Index</h1>
+            <p style="display: inline;">By Kenny Vu</p>
+        </div>
+
+        <!--main-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 my-3 text-white" style="border-radius:20px; text-align:center; padding:20px; background-color: rgba(77, 255, 0, 0.555);">
+                    <h2><b>Enter Element Here</b></h2>
+                    <p>Enter the full element name, ex. hydrogen, Hydrogen, HYDROGEN</p>
+                    <textarea id="textarea" rows="1" cols="20" style="padding: 10px;"></textarea>
+                    <button type="button" id="inputButton" class="display-6">Submit</button>
+                    <hr>
+                    <p>Use this website if you want to quickly search up the properties of an element without having to manually search and find it on a periodic table.</p>
+                    <hr>
+                    <a href="https://www.google.com/search?q=periodic+table&oq=period&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIMCAEQRRg5GLEDGIAEMg4IAhBFGCcYOxiABBiKBTINCAMQABixAxjJAxiABDIKCAQQABixAxiABDIGCAUQRRg9MgYIBhBFGD0yBggHEEUYPdIBBzkzNWowajSoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank">Periodic Table</a>
+                    <br>
+                    <a href="https://www.youtube.com/@TheOrganicChemistryTutor" target="_blank">The Organic Chemistry Tutor (YT)</a>
+                    <br>
+                    <a href="https://www.youtube.com/@NileRed" target="_blank">NileRed (YT)</a>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-8 my-3 text-white" style="border-radius: 20px; text-align:center; padding:20px; background-color: rgba(0, 255, 21, 0.555);">
+                    
+                    <!--INFO PANEL-->
+                    
+                    <h1><strong>Info</strong></h1>
+                    <p>The info should be accurate, but I can't guarantee 100% accuracy.</p>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h3>Element:</h3>
+                                <hr>
+                                <h3>Molar Mass:</h3>
+                                <hr>
+                                <h3>Charge:</h3>
+                                <hr>
+                                <h3><nobr>Atomic Number</nobr></h3>
+                                <hr>
+                                <h3>Type</h3>
+                                <p><nobr>Ex. Metallic, Non-metallic, etc. (COMING SOON)</nobr></p>
+                                <hr>
+                            </div>
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-2">
+                                <h3 id="elementInfo"></h3>
+                                <hr>
+                                <h3 id="molarMassInfo"></h3>
+                                <hr>
+                                <h3 id="chargeInfo"></h3>
+                                <hr>
+                                <h3 id="atomicNumberInfo"></h3>
+                                <hr>
+                                <h3 id="typeInfo"></h3>
+                                <hr>
+                            </div>
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-2 bg-dark" style="border-radius:20px; border-color:white; max-height: 1in;">
+                                <h1 style="font-size:75px;" id="elementSymbol"></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Scrolling down part ig-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <h1 style="text-align: center;">PERIODIC TABLE</h1>
+                    <img scr="/images/periodictable.jpg" alt="periodictable" width="1650" height="1100">
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </body>
+</html>
