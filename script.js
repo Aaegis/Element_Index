@@ -527,12 +527,20 @@ function query() {
     searchValue = 0;
     atomicNumber =  "none";
     charge = "none";
+    document.getElementById("textarea").value = "";
 }
 
 // left click button go brrrr
 // (run the getting info process when clicking the submit button)
 document.getElementById("inputButton").onclick = function() {
     query();
+    document.getElementById("textarea").value = "";
 }
 
+document.addEventListener("keydown", (event) => {
+    if (event.key == "Enter") {
+        event.preventDefault();
+        query();
+    }
+});
 // i hate my code
