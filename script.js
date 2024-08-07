@@ -1,6 +1,6 @@
-charge = "none"; // variable for outputting the charge of an element later
-userInput = "none";
-atomicNumber = "none";
+charge = ""; // variable for outputting the charge of an element later
+userInput = "";
+atomicNumber = "";
 
 // important for the loop later
 searchValue = 0;
@@ -490,7 +490,7 @@ function query() {
             charge = 0;
             break;
         default:
-            charge = "none";
+            charge = "";
             break;
     }
 
@@ -514,7 +514,7 @@ function query() {
     } else if (searchValue != 200) {
         atomicNumber = searchValue - 14;
     } else {
-        atomicNumber = "none";
+        atomicNumber = "";
     }
 
     document.getElementById("atomicNumberInfo").textContent = atomicNumber;
@@ -525,8 +525,8 @@ function query() {
 
     // allow the user to query again without having to refresh or do anything stupid
     searchValue = 0;
-    atomicNumber =  "none";
-    charge = "none";
+    atomicNumber =  "";
+    charge = "";
     document.getElementById("textarea").value = "";
 }
 
